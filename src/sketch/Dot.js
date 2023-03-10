@@ -26,7 +26,7 @@ export default class Dot {
   }
 
   show() {
-    this.sketch.stroke(255);
+    this.sketch.stroke(155);
     this.sketch.fill(0);
     this.sketch.ellipse(this.position.x, this.position.y, this.radius, this.radius);
   }
@@ -78,7 +78,7 @@ export default class Dot {
 
     let speed = this.maxSpeed;
     if (desiredMagnitude < this.maxMagnitude) {
-      speed = this.sketch.map(desiredMagnitude, 0, 100, 0, this.maxSpeed);
+      speed = this.sketch.map(desiredMagnitude, 0, 150, 0, this.maxSpeed);
     }
 
     desired.setMag(speed);
